@@ -1,3 +1,9 @@
 .detail{
     padding: 5rem 10rem;
 }
+
+@media screen and (max-width: 1300px) {
+    .detail{
+        padding: 5rem 10%;
+    }
+  }
