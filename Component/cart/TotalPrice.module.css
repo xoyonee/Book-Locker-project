@@ -1,0 +1,134 @@
+.price {
+  width: 35%;
+  padding: 0 3%;
+  position: fixed;
+  top: 4rem;
+  right: 0;
+}
+
+.card {
+  padding: 5%;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #33cccc;
+}
+.card p {
+  margin: 8px 0;
+}
+.card li {
+  font-size: 14px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.card li > p:first-child {
+  width: 70%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.card li > p:last-child {
+  width: 20%;
+
+  text-align: right;
+}
+.card span {
+  float: right;
+}
+
+.total {
+  border-top: 1px solid #fff;
+}
+.total p {
+  font-size: 1em;
+}
+
+.price button {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 3% 0;
+  font-size: 1.2em;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background-color: #fd5830;
+}
+.price button:active {
+  background-color: #ff6d48;
+}
+.price button:disabled {
+  background-color: #ccc;
+  color: #292929;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* 반응형 */
+@media screen and (max-width: 1200px) {
+  .price {
+    padding: 0 2%;
+  }
+  .card li > p:last-child {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .price {
+    width: 100%;
+    padding: 0 6%;
+    position: static;
+    font-size: 1.2em;
+  }
+  .card {
+    padding: 3% 5%;
+    margin: 0 9%;
+  }
+  .price button {
+    display: block;
+    width: calc(100% - 18%);
+    margin: 1rem auto;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .list .img_box {
+    width: 120px;
+    height: 190px;
+  }
+  .list img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .price {
+    font-size: 1em;
+  }
+  .card {
+    padding: 3% 5%;
+    margin: 0 2.5%;
+  }
+  .price button {
+    display: block;
+    width: calc(100% - 5%);
+    margin: 1rem auto;
+  }
+  .list .name {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .price {
+    padding: 0 3%;
+  }
+  .card {
+    padding: 3%;
+    margin: 0 1%;
+  }
+  .price button {
+    width: calc(100% - 2%);
+  }
+}

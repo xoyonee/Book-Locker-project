@@ -1,0 +1,28 @@
+.list {
+  padding: 0 5rem;
+}
+.list h1 {
+  margin-top: 3rem;
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: 100;
+}
+.ul {
+  height: 400px;
+}
+
+/* 반응형 */
+@media screen and (max-width: 1120px) {
+  .list {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .list {
+    padding: 0 1rem;
+  }
+  .list > h1 {
+    font-size: 1.2rem;
+  }
+}

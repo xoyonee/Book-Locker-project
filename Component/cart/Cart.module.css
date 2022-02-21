@@ -1,0 +1,14 @@
+.sec {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+/* 반응형 */
+@media screen and (max-width: 880px) {
+  .sec {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+}

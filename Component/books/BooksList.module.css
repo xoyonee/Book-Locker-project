@@ -1,0 +1,155 @@
+.list {
+  padding: 0 5rem;
+}
+.ul {
+  padding: 0 5rem;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.parent > div {
+  height: 380px;
+  padding: 20px;
+  gap: 30px;
+}
+
+.li {
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3);
+}
+.li .img_box {
+  font-size: 0;
+  position: relative;
+  user-select: none;
+  background-color: #ccc;
+}
+.li img {
+  width: 170px;
+  height: 255px;
+}
+.li .pan {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.5s;
+}
+.li .img_box:hover .pan {
+  opacity: 1;
+}
+.li .plus {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  padding: 0;
+  font-size: 1.9rem;
+  color: #ccc;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: transparent;
+
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.li .img_box:hover .plus {
+  opacity: 1;
+}
+.li .plus:hover {
+  color: #fff;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+.li .info {
+  padding: 0 5px;
+}
+.info p {
+  width: 160px;
+  margin: 5px 0;
+  font-size: 1.1em;
+  color: #333;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.info p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.info .author {
+  font-size: 0.8em;
+  color: #aaa;
+}
+.info .price {
+  font-size: 0.8em;
+  text-align: right;
+  color: #aaa;
+}
+
+/* pc제외 기기 */
+@media (pointer: coarse) {
+  /* 스크롤바 생성 */
+  .parent {
+    overflow-x: scroll !important;
+  }
+  .parent::-webkit-scrollbar {
+    width: 13px;
+    height: 10px;
+    background: transparent;
+  }
+  .parent::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 20px;
+
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+  .parent::-webkit-scrollbar-thumb:active {
+    background: #aaa;
+    border-radius: 20px;
+
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+
+  /* 장바구니 버튼 */
+  .li .plus {
+    color: #aaa;
+    border: 2px solid #aaa;
+    opacity: 1;
+    cursor: pointer;
+  }
+  .li .plus:hover {
+    color: #aaa;
+    border: 2px solid #aaa;
+  }
+
+  /* 검은 판 제거 */
+  .li .pan {
+    display: none;
+  }
+
+  /* searchList 타이틀 */ 
+  .blank h1{
+    font-weight: 100;
+  }
+}
+
+/* search 반응형 */
+@media screen and (max-width: 880px) {
+  .blank {
+    padding: 0 5%;
+  }
+}
+
+
+
