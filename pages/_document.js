@@ -10,7 +10,8 @@ export default function Document() {
           content="좋아하는 전자책을 구매하고 소장해보자"
         />
         <meta name="keywords" content="북라커, booklocker, 책, 전자책, ebook" />
-        <link rel="shortcut icon" href='./img/favicon.png' type="image/png" />
+        <meta property="og:image" content="./assets/logo.svg" />
+        <link rel="shortcut icon" href="./img/favicon.png" type="image/png" />
       </Head>
       <body>
         <Main />
