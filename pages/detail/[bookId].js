@@ -1,6 +1,6 @@
 // 댓글, 아이템 정보 저장
 import { Fragment } from "react";
-import Product from "../../Component/detail/product";
+import Product from "../../Component/detail/Product";
 
 import app from "../../store/firebaseConfig";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
