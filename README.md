@@ -58,6 +58,7 @@
 
 <p>
   <img src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black"/>
+  <img src="https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=firebase&logoColor=white"/>
 </p>
 
 <br/><br/>
