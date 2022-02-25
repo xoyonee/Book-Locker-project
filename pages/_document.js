@@ -12,7 +12,7 @@ export default function Document() {
         <meta name="keywords" content="북라커, booklocker, 책, 전자책, ebook" />
         <meta
           property="og:image"
-          content="{`${process.env.PUBLIC_URL}/img/thumbnail_b.png`}"
+          content="%PUBLIC_URL%/img/thumbnail_b.png"
         />
         <link rel="shortcut icon" href="./img/favicon.png" type="image/png" />
       </Head>
