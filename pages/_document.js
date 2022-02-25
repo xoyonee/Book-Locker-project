@@ -13,6 +13,7 @@ export default function Document() {
         <meta
           property="og:image"
           content="%PUBLIC_URL%/img/thumbnail_b.png"
+          name="image'
         />
         <meta
           property="og:image"
