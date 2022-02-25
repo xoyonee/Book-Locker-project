@@ -12,7 +12,7 @@ export default function Document() {
         <meta name="keywords" content="북라커, booklocker, 책, 전자책, ebook" />
         <meta
           property="og:image"
-          content='%PUBLIC_URL%/img/thumbnail_b.png"'
+          content='https://firebasestorage.googleapis.com/v0/b/booklocker-981a5.appspot.com/o/thumbnail_b.png?alt=media&token=53551fce-d805-4830-a6f2-2808c244891c'
         />
         <link rel="shortcut icon" href="./img/favicon.png" type="image/png" />
       </Head>
