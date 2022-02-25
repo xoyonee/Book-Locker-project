@@ -18,6 +18,7 @@ export default function Document() {
         <meta
           property="og:image"
           content="%PUBLIC_URL%/src/img/thumbnail_b.png"
+          name="image'
         />
         <link rel="shortcut icon" href="./img/favicon.png" type="image/png" />
       </Head>
