@@ -44,7 +44,7 @@
 
 <br/>
 
-이미지
+<img src="https://firebasestorage.googleapis.com/v0/b/booklocker-981a5.appspot.com/o/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98.jpg?alt=media&token=e02dbee7-0d18-40d4-ac11-328c8d5a88de"/>
 
 <br/><br/>
 
