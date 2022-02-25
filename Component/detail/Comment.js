@@ -1,7 +1,7 @@
 //댓글 컴포넌트
 
 // 파이어베이스 연결
-import classes from "./comment.module.css";
+import classes from "./Comment.module.css";
 import app from "../../store/firebaseConfig";
 import { getFirestore, doc, updateDoc } from "firebase/firestore";
 const db = getFirestore(app);
