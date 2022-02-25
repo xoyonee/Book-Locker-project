@@ -12,7 +12,7 @@ export default function Document() {
         <meta name="keywords" content="북라커, booklocker, 책, 전자책, ebook" />
         <meta
           property="og:image"
-          content="https://book-locker-project.vercel.app"
+          content="https://book-locker-project.vercel.app/_next/static/media/logo.26f92553.svg"
         />
         <link rel="shortcut icon" href="./img/favicon.png" type="image/png" />
       </Head>
