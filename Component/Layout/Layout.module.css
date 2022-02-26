@@ -35,6 +35,14 @@
   background-color: #ccc;
 }
 
+/* pc제외 기기 */
+@media (pointer: coarse) {
+  .wrap .contents_active {
+    width: calc(100% - 50px);
+    margin-left: 50px;
+  }
+}
+
 /* 반응형 */
 @media screen and (max-width: 770px) {
   .wrap .contents_active {

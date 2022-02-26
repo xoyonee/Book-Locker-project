@@ -144,6 +144,12 @@
   }
 }
 
+
+/* 반응형 */
+@media screen and (max-width: 720px) {
+
+}
+
 /* search 반응형 */
 @media screen and (max-width: 880px) {
   .blank {

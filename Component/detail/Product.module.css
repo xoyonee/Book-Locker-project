@@ -1,9 +1,16 @@
-.detail{
-    padding: 5rem 10rem;
+.detail {
+  padding: 5rem 10rem;
 }
 
 @media screen and (max-width: 1300px) {
-    .detail{
-        padding: 5rem 10%;
-    }
+  .detail {
+    padding: 5rem 10%;
   }
+}
+
+@media screen and (max-width: 960px) {
+  .detail {
+    padding: 5rem 5%;
+  }
+}
+

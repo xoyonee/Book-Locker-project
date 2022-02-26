@@ -34,27 +34,23 @@ const Bookdetail = () => {
             <article className={classes.publication}>
               <div>
                 <div className={classes.tag}>출간 정보</div>
-                <div>{data.day}</div>
+                <div className={classes.value}>{data.day}</div>
               </div>
               <div>
                 <div className={classes.tag}>파일 정보</div>
-                <div>평균 0.3MB</div>
-              </div>
-              <div>
-                <div className={classes.tag}>지원 기기</div>
-                <div>PAPER/iOS/Android/PC/Mac</div>
+                <div className={classes.value}>평균 0.3MB</div>
               </div>
               <div>
                 <div className={classes.tag}>페이지</div>
-                <div>{data.page}</div>
+                <div className={classes.value}>{data.page}</div>
               </div>
               <div>
                 <div className={classes.tag}>출간</div>
-                <div>{data.publisher}</div>
+                <div className={classes.value}>{data.publisher}</div>
               </div>
               <div>
-                <div className={classes.tag}></div>
-                <div></div>
+                <div className={classes.tag}>지원 기기</div>
+                <div className={classes.value}>PC</div>
               </div>
             </article>
 
@@ -64,11 +60,12 @@ const Bookdetail = () => {
               {data.desc && <p>{data.desc}</p>}
             </article>
 
-            <article className={classes.intro}>
-              <h1>저자 프로필</h1>
-              <p>{data.info}</p>
-              <div className={classes.btn_more}></div>
-            </article>
+            {data.info !== null && (
+              <article className={classes.intro}>
+                <h1>저자 프로필</h1>
+                <p>{data.info}</p>
+              </article>
+            )}
           </section>
         </Fragment>
       )}

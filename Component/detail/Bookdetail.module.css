@@ -1,58 +1,107 @@
-.book_title{
-    display: flex;
-    gap: 100px;
+.book_title {
+  display: flex;
+  gap: 10%;
 }
-.book_title img{
-    width: 100%;
+.book_title img {
+  width: 100%;
 }
-.book_name h1{
-    margin: 0;
-    margin-bottom: 50px;
-    font-size: 65px;
-    font-weight: 500;
+.book_name h1 {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 65px;
+  font-weight: 500;
 }
-.book_name p{
-    color: #aaa;
+.book_name p {
+  color: #aaa;
 }
 
-.publication{
-    padding: 20px;
-    margin: 100px 0;
-    font-size: 1em;
-    color: #222;
-    border: 2.5px solid #ddd;
-    box-sizing: border-box;
-    border-radius: 5px;
+.publication {
+  padding: 20px;
+  margin: 100px 0;
+  font-size: 1em;
+  color: #222;
+  border: 2.5px solid #ddd;
+  box-sizing: border-box;
+  border-radius: 5px;
 
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 25px ;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 25px;
 }
-.publication > div{
-    display: flex;
-    flex: 1 1 35%;
-    color: #aaa;
+.publication > div {
+  display: flex;
+  justify-content: space-between;
+  flex: 1 1 35%;
+  color: #aaa;
 }
-.publication .tag{
-    width: 120px;
-    color: #333;
+
+.publication .tag {
+  width: 120px;
+  color: #333;
+}
+
+.publication .value {
+  width: calc(100% - 140px);
+  height: 40px;
+  overflow: hidden;
 }
 
 /* intro */
-.intro{
-    margin-bottom: 120px;
+.intro {
+  margin-bottom: 120px;
 }
-.book_info_box h1{
-    padding-left: 10px;
-    padding-bottom: 10px;
-    font-weight: 500;
-    border-bottom: 2.5px solid #ddd;
+.book_info_box h1 {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  font-weight: 500;
+  border-bottom: 2.5px solid #ddd;
 }
-.book_info_box p{
-    padding: 0 5px;
-    line-height: 2;
-    font-size: 14px;
-    margin-bottom: 60px;
-    white-space: pre-line;
+.book_info_box p {
+  padding: 0 5px;
+  line-height: 2;
+  font-size: 14px;
+  margin-bottom: 60px;
+  white-space: pre-line;
+}
+
+/* 반응형 */
+@media screen and (max-width: 760px) {
+  .book_title {
+    flex-direction: column;
+    text-align: center;
+  }
+  .img_box {
+    width: 100%;
+    padding: 0 20%;
+    margin-bottom: 50px;
+  }
+  .book_name h1 {
+    font-size: 45px;
+    margin: 0;
+  }
+
+  .book_name p {
+    font-size: 1.2em;
+  }
+
+  .publication {
+    padding: 10px;
+    margin: 50px 0;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .img_box {
+    width: 100%;
+    padding: 0 5%;
+    margin-bottom: 50px;
+  }
+  .publication {
+    flex-direction: column;
+  }
+  .publication .value {
+    height: 20px;
+  }
 }

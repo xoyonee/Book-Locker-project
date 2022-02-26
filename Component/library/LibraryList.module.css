@@ -123,6 +123,12 @@
     margin: 5px 0;
     font-size: 0.7em;
   }
+  .li .plus {
+    width: 65px;
+    line-height: 30px;
+    padding: 0;
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 580px) {

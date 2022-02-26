@@ -110,9 +110,21 @@
 
 /* pc제외 기기 */
 @media (pointer: coarse) {
+  .nav_active {
+    width: 50px;
+  }
   .nav_active .double,
   .nav .double {
     display: none;
+  }
+  .nav_active li {
+    min-width: 20px;
+    padding: 12px;
+    margin: 10px auto;
+  }
+  .nav_active .li:hover,
+  .nav_active .cash:hover {
+    width: 55px;
   }
 }
 
@@ -121,8 +133,14 @@
   .nav_active {
     width: 50px;
   }
+  .nav_active .double,
+  .nav .double {
+    display: none;
+  }
   .nav_active li {
     min-width: 20px;
+    padding: 12px;
+    margin: 10px auto;
   }
   .nav_active .li:hover,
   .nav_active .cash:hover {

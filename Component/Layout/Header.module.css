@@ -114,6 +114,13 @@
   }
 }
 
+/* pc제외 기기 */
+@media (pointer: coarse) {
+  .header_active {
+    width: calc(100% - 50px);
+  }
+}
+
 /* 반응형 */
 @media screen and (max-width: 1120px) {
   .header ul {

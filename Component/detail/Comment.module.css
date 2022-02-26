@@ -94,3 +94,27 @@
   padding: 5px 30px;
   margin: 0;
 }
+
+/* 반응형 */
+@media screen and (max-width: 545px) {
+  .write {
+    width: 100%;
+    font-size: 0.9em;
+  }
+  .rivew_input {
+    padding: 5px 15px;
+  }
+  .write button {
+    width: 15%;
+  }
+  .rivew_box {
+    width: 90%;
+    margin: 10px auto;
+    font-size: 0.9em;
+    padding-bottom: 10px;
+  }
+  .rivew_txt {
+    height: 100%;
+    padding: 5px 15px;
+  }
+}
