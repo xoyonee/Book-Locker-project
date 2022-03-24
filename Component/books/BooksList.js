@@ -31,7 +31,6 @@ const BooksList = (props) => {
     <HorizontalScroll
       reverseScroll={true}
       className={classes.parent}
-      pageLock={true}
     >
       {arr.map((data) => {
         return (
