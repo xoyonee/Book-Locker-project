@@ -1,20 +1,23 @@
 // 인증 컴포넌트
 
-import { useDispatch, useSelector } from "react-redux";
-import { useRouter } from "next/router";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { useRouter } from "next/router";
+
 import classes from "./AuthForm.module.css";
-import useAuth from "../../hooks/useAuth"; //input 유효성검사 커스텀 훅
+
 import { CreateUser } from "../../store/api";
 import { SignIn } from "../../store/api";
+import useAuth from "../../hooks/useAuth"; //input 유효성검사 커스텀 훅
 import LoadingIndicator from "../UI/LoadingIndicator";
 
 const AuthForm = () => {
-  const router = useRouter();
   const dispatch = useDispatch();
 
   const [loginChk, setLoginChk] = useState(false);
   const [loading, setLoading] = useState(false);
+  
+  const router = useRouter();
 
   const {
     value: emailEntered,

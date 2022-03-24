@@ -17,7 +17,6 @@ const SearchPage = (props) => {
   useEffect(() => {
     if (props.list.length === 0) {
       router.push("/404");
-      console.log('이동')
     }
     if (chk) {
       dispatch(

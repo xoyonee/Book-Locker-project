@@ -12,12 +12,12 @@ import { dataBaseActions } from "../../store/dataBaseReducers";// dataBaseReduce
 const DetailPage = (props) => {
   const dispatch = useDispatch();
   dispatch(
-    dataBaseActions.setCommentReplace({ //댓글 가져오기
+    dataBaseActions.setCommentReplace({ //댓글 저장
       comment: props.comment,
     })
   );
   dispatch(
-    dataBaseActions.productItem({ //아이템 정보 가져오기
+    dataBaseActions.productItem({ //아이템 정보 저장
       product: props.item,
     })
   );

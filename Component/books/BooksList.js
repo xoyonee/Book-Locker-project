@@ -3,7 +3,7 @@
 import classes from "./BooksList.module.css";
 import { useSelector, useDispatch } from "react-redux";
 
-import { cartActions } from "../../store/cartReducers";//cart 리듀서
+import { cartActions } from "../../store/cartReducers"; //cart 리듀서
 import Link from "next/link";
 
 import HorizontalScroll from "react-scroll-horizontal"; // 횡 스크롤
@@ -28,7 +28,11 @@ const BooksList = (props) => {
   };
 
   return (
-    <HorizontalScroll reverseScroll={true} className={classes.parent} pageLock={true} > 
+    <HorizontalScroll
+      reverseScroll={true}
+      className={classes.parent}
+      pageLock={true}
+    >
       {arr.map((data) => {
         return (
           <div key={Math.random()} className={classes.li}>
@@ -45,6 +49,10 @@ const BooksList = (props) => {
                   <img src={data.url} />
                 </a>
               </Link>
+              {/* <a href={`/detail/${data.id}`}>
+                <div className={classes.pan}></div>
+                <img src={data.url} />
+              </a> */}
               <button
                 name={data.id}
                 onClick={addClickHandler}
